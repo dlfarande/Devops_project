@@ -1,0 +1,9 @@
+node {
+/* insert Scripted Pipeline here */
+}
+
+node {
+stage ('Hello world') {
+sh 'echo Hello World'
+}
+}
