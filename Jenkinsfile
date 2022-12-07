@@ -1,14 +1,14 @@
 pipeline {
   environment {
-    registry = "nileshkardile831/incedo"
-    registryCredential = 'dockercredentials'
+    registry = "dlfarande/dockerhubregistry"
+    registryCredential = 'dockercrhubedentials'
     dockerImage = ''
   }
   agent any
   stages {
     stage('Checkout') {
       steps {
-        git credentialsId: '777a7344-89b9-4515-9830-3bd6e9a66158', url: 'https://github.com/nileshkardile831/incedo-repo.git'
+        git credentialsId: 'githubcredentials', url: 'https://github.com/dlfarande/Devops_project.git'
       }
     }
     stage('Docker Build') {
