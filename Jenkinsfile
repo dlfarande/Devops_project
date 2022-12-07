@@ -1,7 +1,7 @@
 pipeline {
   environment {
     registry = "dlfarande/dockerhubregistry"
-    registryCredential = 'dockercrhubedentials'
+    registryCredential = 'dockerhubedentials'
     dockerImage = ''
   }
   agent any
